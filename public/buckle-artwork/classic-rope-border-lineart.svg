@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Line-art version of the "Classic Rope Border" blank: pure black outlines on white, the form
+  Marley draws proofs in and the engraver works from. Same 1000x780 coordinate space as the
+  metal artwork, so the two are interchangeable behind the same zone geometry.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="780" viewBox="0 0 1000 780">
+  <rect width="1000" height="780" fill="#ffffff" />
+
+  <g fill="none" stroke="#111111" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Outer edge -->
+    <path d="M125 5 L875 5 L995 125 L995 655 L875 775 L125 775 L5 655 L5 125 Z" stroke-width="6" />
+
+    <!-- Twisted rope border, drawn as its two guide lines plus the twist strokes -->
+    <path d="M150 30 L850 30 L970 150 L970 630 L850 750 L150 750 L30 630 L30 150 Z" stroke-width="3" />
+    <path d="M166 46 L834 46 L954 166 L954 614 L834 734 L166 734 L46 614 L46 166 Z" stroke-width="3" />
+    <path
+      d="M150 30 L850 30 L970 150 L970 630 L850 750 L150 750 L30 630 L30 150 Z"
+      stroke-width="15"
+      stroke-dasharray="3 16"
+    />
+
+    <!-- Recessed inner panel -->
+    <path d="M196 74 L804 74 L926 196 L926 584 L804 706 L196 706 L74 584 L74 196 Z" stroke-width="4" />
+    <path d="M208 86 L792 86 L914 208 L914 572 L792 694 L208 694 L86 572 L86 208 Z" stroke-width="2" />
+  </g>
+</svg>

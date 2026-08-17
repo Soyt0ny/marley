@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Blank artwork for the "Classic Rope Border" example model: a rectangular buckle with cut
+  corners, a twisted rope border and a recessed inner panel. Stands in for a photograph of the
+  real blank so the customizer can be demonstrated end to end. Sized to the 1000x780 coordinate
+  space the model's zone geometry is defined in.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="780" viewBox="0 0 1000 780">
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#f3f1ec" />
+      <stop offset="28%" stop-color="#cfc9bd" />
+      <stop offset="52%" stop-color="#eae6dd" />
+      <stop offset="76%" stop-color="#b9b2a4" />
+      <stop offset="100%" stop-color="#ddd8cd" />
+    </linearGradient>
+
+    <linearGradient id="panel" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#b3ab9b" />
+      <stop offset="45%" stop-color="#cdc6b7" />
+      <stop offset="100%" stop-color="#a49c8c" />
+    </linearGradient>
+
+    <linearGradient id="rope" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f2ea" />
+      <stop offset="50%" stop-color="#a79f8e" />
+      <stop offset="100%" stop-color="#efeade" />
+    </linearGradient>
+
+    <filter id="soften" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="1.4" />
+    </filter>
+  </defs>
+
+  <!-- Body -->
+  <path
+    d="M125 4 L875 4 L996 125 L996 655 L875 776 L125 776 L4 655 L4 125 Z"
+    fill="url(#silver)"
+    stroke="#8d8578"
+    stroke-width="5"
+  />
+
+  <!-- Twisted rope border, suggested with a heavy round-capped dash -->
+  <path
+    d="M148 34 L852 34 L966 148 L966 632 L852 746 L148 746 L34 632 L34 148 Z"
+    fill="none"
+    stroke="url(#rope)"
+    stroke-width="22"
+    stroke-linejoin="round"
+    stroke-dasharray="17 9"
+    stroke-linecap="round"
+  />
+  <path
+    d="M148 34 L852 34 L966 148 L966 632 L852 746 L148 746 L34 632 L34 148 Z"
+    fill="none"
+    stroke="#7f7869"
+    stroke-width="23"
+    stroke-linejoin="round"
+    stroke-dasharray="1 25"
+    stroke-linecap="round"
+    opacity="0.55"
+  />
+
+  <!-- Recessed inner panel the engraving sits on -->
+  <path
+    d="M196 74 L804 74 L926 196 L926 584 L804 706 L196 706 L74 584 L74 196 Z"
+    fill="url(#panel)"
+    stroke="#867e70"
+    stroke-width="3"
+  />
+  <path
+    d="M196 74 L804 74 L926 196 L926 584 L804 706 L196 706 L74 584 L74 196 Z"
+    fill="none"
+    stroke="#fbf9f4"
+    stroke-width="2"
+    opacity="0.5"
+    filter="url(#soften)"
+  />
+
+  <!-- Faint highlight sweep across the face -->
+  <path
+    d="M74 196 L500 74 L926 196 L926 300 L500 190 L74 300 Z"
+    fill="#ffffff"
+    opacity="0.09"
+  />
+</svg>

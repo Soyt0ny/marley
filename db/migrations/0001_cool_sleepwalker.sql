@@ -1,0 +1,1 @@
+ALTER TABLE "designs" ADD COLUMN "ai_generation_window_started_at" timestamp with time zone DEFAULT now() NOT NULL;

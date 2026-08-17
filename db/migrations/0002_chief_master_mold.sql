@@ -1,0 +1,1 @@
+ALTER TABLE "templates" ADD COLUMN "line_art_url" text;

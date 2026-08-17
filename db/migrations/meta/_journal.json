@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1786910412446,
+      "tag": "0000_aspiring_captain_flint",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1786919204311,
+      "tag": "0001_cool_sleepwalker",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1786919605323,
+      "tag": "0002_chief_master_mold",
+      "breakpoints": true
+    }
+  ]
+}
